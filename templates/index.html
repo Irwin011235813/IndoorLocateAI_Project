@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndoorLocateAI Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <h1>IndoorLocateAI Almacén</h1>
+            <p>Rastreo de activos en tiempo real</p>
+        </header>
+        
+        <div class="main-content">
+            <aside class="sidebar">
+                <h2>Control</h2>
+                <button onclick="trainModel()">Entrenar Modelo (Post-Calibración)</button>
+                <div class="status-box">
+                    <h3>Estado del Servidor:</h3>
+                    <p id="server-status">Corriendo...</p>
+                </div>
+            </aside>
+
+            <main class="map-area">
+                <!-- Aquí se cargaría un plano real del almacén -->
+                <div id="warehouse-map">
+                    <!-- Los activos se representarán con puntos dentro de este div -->
+                    <div class="asset-point" style="left: 10%; top: 50%;" title="Carretilla 1 (Ejemplo)"></div>
+                </div>
+            </main>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 IndoorLocateAI Project</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.dashboard-container {
+    width: 90%;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.main-content {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    padding: 20px;
+    background-color: #e9e9e9;
+}
+
+.map-area {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+#warehouse-map {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: #ddd; /* Reemplazar con imagen de plano de almacén */
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.asset-point {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ff5733;
+    border-radius: 50%;
+    transform: translate(-50%, -50%); /* Centra el punto en las coordenadas */
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.status-box {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
